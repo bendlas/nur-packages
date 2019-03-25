@@ -27,7 +27,7 @@
 
 **My personal [NUR](https://github.com/nix-community/NUR) repository**
 
-[![Build Status](https://travis-ci.com/bendlas/nur-packages.svg?branch=master)](https://travis-ci.com/bendlas/nur-packages)
+[![Build Status](https://travis-ci.org/bendlas/nur-packages.svg?branch=master)](https://travis-ci.org/bendlas/nur-packages)
 [![Cachix Cache](https://img.shields.io/badge/cachix-bendlas-blue.svg)](https://bendlas.cachix.org)
 
 

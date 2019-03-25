@@ -24,7 +24,7 @@ rustPlatform.buildRustPackage rec {
   meta = with stdenv.lib; {
     description = "The next gen ls command";
     homepage = https://github.com/Peltoche/lsd;
-    license = licenses.apache;
+    license = licenses.asl20;
     maintainers = [ maintainers.bendlas ];
     platforms = platforms.all;
   };

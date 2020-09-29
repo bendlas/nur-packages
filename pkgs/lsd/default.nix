@@ -1,25 +1,17 @@
 { stdenv, rustPlatform, fetchFromGitHub }:
 
-# stdenv.mkDerivation rec {
-#   name = "lsd-${version}";
-#   version = "0.14.0";
-#   src = ./.;
-#   buildPhase = "echo echo Hello World > example";
-#   installPhase = "install -Dm755 example $out";
-# }
-
 rustPlatform.buildRustPackage rec {
   name = "lsd-${version}";
-  version = "0.14.0";
+  version = "0.18.0";
 
   src = fetchFromGitHub {
     owner = "Peltoche";
     repo = "lsd";
     rev = "${version}";
-    sha256 = "1k054c4mz0z9knfn7kvvs3305z2g2w44l0cjg4k3cax06ic1grlr";
+    sha256 = "006fy87jrb77cpa6bywchcvq1p74vlpy151q1j4nsj8npbr02krj";
   };
 
-  cargoSha256 = "0pg4wsk2qaljrqklnl5p3iv83314wmybyxsn1prvsjsl4b64mil9";
+  cargoSha256 = "0mrvcca9y0vylcrbfxxba45v05qxd8z91vb4in88px60xah0dy3q";
 
   meta = with stdenv.lib; {
     description = "The next gen ls command";

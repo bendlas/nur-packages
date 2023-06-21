@@ -19,7 +19,5 @@
   # flakeModules = { }; # flake-parts modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  lsd = pkgs.callPackage ./pkgs/lsd { };
-  # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
-  # ...
+  lsd = pkgs.callPackage ./pkgs/lsd.nix { };
 }

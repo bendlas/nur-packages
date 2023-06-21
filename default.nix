@@ -15,4 +15,5 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   lsd = pkgs.callPackage ./pkgs/lsd.nix { };
+  zsh-capture-completion = pkgs.callPackage ./pkgs/zsh-capture-completion.nix { };
 }

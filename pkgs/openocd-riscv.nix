@@ -99,6 +99,7 @@ stdenv.mkDerivation rec {
     homepage = "https://openocd.sourceforge.net/";
     license = licenses.gpl2Plus;
     platforms = platforms.unix;
+    mainProgram = "openocd";
   };
 }
 

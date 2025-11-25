@@ -20,7 +20,7 @@
 
 stdenv.mkDerivation rec {
   pname = "openocd-riscv";
-  version = "2025-10-09";
+  version = "latest";
 
   src = fetchFromGitHub {
     owner = "riscv-collab";

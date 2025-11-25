@@ -14,5 +14,6 @@
       # homeModules = import ./home-modules;
       # darwinModules = import ./darwin-modules;
       # flakeModules = import ./flake-modules;
+      overlays = import ./overlays // { default = import ./overlay.nix; };
     };
 }

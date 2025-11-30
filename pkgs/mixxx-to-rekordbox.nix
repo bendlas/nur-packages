@@ -8,7 +8,7 @@
 
 let
   pythonEnv = python3.withPackages (ps: with ps; [
-    eyeD3
+    eyed3
     lxml
     protobuf
     pydub

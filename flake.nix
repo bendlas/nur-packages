@@ -11,5 +11,13 @@
       });
       packages = forAllSystems (system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system});
       overlays = import ./overlays // { default = import ./overlay.nix; };
+      devShells = forAllSystems (system:
+        let
+          pkgs = import nixpkgs { inherit system; };
+        in
+        {
+          default = import ./devshell.nix { inherit pkgs; };
+        }
+      );
     };
 }

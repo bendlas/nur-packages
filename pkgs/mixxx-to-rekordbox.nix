@@ -24,7 +24,7 @@ stdenv.mkDerivation rec {
     owner = "TheKantankerus";
     repo = "MixxxToRekordbox";
     rev = "1dbc393e72ede9a6a39e286362ec88de05254f56";
-    hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    hash = "sha256-B4YnubS46ktGSK7D564v77GPzX8brjkiIFJsx9jmT78=";
   };
 
   nativeBuildInputs = [ makeWrapper ];
